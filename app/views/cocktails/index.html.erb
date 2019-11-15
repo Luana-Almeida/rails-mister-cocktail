@@ -1,0 +1,34 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "#", class: "navbar-brand" do %>
+    <%= image_tag "logo.jpg", alt:"Logo", width: 250 %>
+    <%= image_tag "On_rails_cocktails.jpg", alt:"Logo", width: 450 %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "Create a new cocktail", "/cocktails/new", class: "btn btn-outline-secondary"   %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<h1>Cocktails</h1>
+
+<p><%= link_to "Create new", new_cocktail_path %></p>
+
+<!-- <div class="container">
+  <div class="row"> -->
+  <ul>
+  <% @cocktails.each do |cocktail| %>
+  <!-- </div> -->
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <% end %>
+  </ul>
+<!-- </div> -->
