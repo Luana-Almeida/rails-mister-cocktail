@@ -28,15 +28,14 @@
   <ul>
   <% @cocktails.each do |cocktail| %>
   <!-- </div> -->
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></ li>
   <% end %>
   </ul>
 <!-- </div> -->
 
 <!-- app/views/articles/index.html.erb -->
-<%= cl_image_tag("ermz48kbmfl5z4ndd9zq"),
-      width: 400, height: 300, crop: :fill) %>
-
+<%= cl_image_tag("tarwr9ltpqchea1jgucv",
+     width: 400, height: 300, crop: :fill) %>
 <!-- for face detection -->
-<%= cl_image_tag("IMAGE_WITH_FACE_ID",
-      width: 150, height: 150, crop: :thumb, gravity: :face) %>
+<%= cl_image_tag("tarwr9ltpqchea1jgucv",
+     width: 150, height: 150, crop: :thumb, gravity: :face)
